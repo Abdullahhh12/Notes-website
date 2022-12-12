@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Ubuntu&display=swap');
+body{
+    background-color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+nav{
+    font-family: 'Oswald', sans-serif;
+  
+    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: #333;
+    height: 65px;
+    color: whitesmoke;
+    
+}
+.navu{
+    
+    position: sticky;
+    top: 0;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.logo img{
+    width: 50px;
+    padding: 0 8px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+.container{
+    min-height: 75vh;
+    background-color: #333;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 33px;
+}
+.songItemContainer{
+  margin: 50px 0;
+  
+}
+.songInfo{
+  position: relative;
+  /* left: px; */
+  padding: 5px;
+  color: wheat;
+}
+.name{
+  font-family: ubuntu ;
+  font-weight: bold;
+}
+
+#sideID{
+  width: 250px;
+  height: 100vh;
+  top: 20px;
+  position: fixed;
+  right: -250px;
+  background-color: #333;
+  z-index:2 ;
+  transition: .4s;
+
+}
+#menuicon{
+  position: fixed;
+  width: 40px;
+  right: 40px;
+  top : 20px;
+  z-index: 2;
+  cursor: pointer;
+
+}
+#closeicon{
+  position: fixed;
+  width: 40px;
+  right: 30px;
+  top : 15px;
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+
+}
+.nav-item{
+  list-style: none;
+  position: fixed;
+  /* top: 100px; */
+  padding-top: 10px;
+  margin: 10px 20px;
+
+}
+
+.nav-link{
+  text-decoration: none;
+  color: wheat;
+
+}
+.nav-icon{
+  padding-top: 100px;
+}
+.ins{
+  padding: 10px;
+  font-size: 30px;
+  color: bisque;
+}
+.tweet{
+  padding: 10px;
+  font-size: 30px;
+  color: bisque;
+
+}
+.gith{
+  padding: 10px;
+  font-size: 30px;
+  color: bisque;
+}
+.ins:hover{
+  color: aqua;
+}
+.nav-link:hover{
+  color: aqua;
+}
+.gith:hover{
+  color: aqua;
+}
+.tweet:hover{
+  color: aqua;
+}
+.songItem{
+  height:50px ;
+  display: flex;
+  background-color: white;
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+span a{
+  color: black;
+  text-align: center;
+  text-decoration-line: none;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+@media screen and (max-width:500px){ 
+  .name{
+flex-wrap: wrap;
+font-size: 11px;
+margin: 0 3px;
+padding: 0 2px;
+}
+.head{
+  font-size: 26px;
+  padding-left: 22px;
+}
+nav ul li{
+  font-size: 1rem;
+}
+}
